@@ -16,8 +16,8 @@ class AlphabetTest {
 
     @Test
     void numberOfVowels() {
-        assertEquals(2, a.numberOfVowels("rasmus"));
-        assertEquals(3, a.numberOfVowels("andreas"));
+        assertEquals(2, a.numberOfVowels("RASMUS"));
+        assertEquals(3, a.numberOfVowels("Andreas"));
         assertEquals(3, a.numberOfVowels("hej med dig"));
     }
 
@@ -25,6 +25,6 @@ class AlphabetTest {
     void numberOfConsonants() {
         assertEquals(4, a.numberOfConsonants("rasmus"));
         assertEquals(4, a.numberOfConsonants("andreas"));
-        assertEquals(6, a.numberOfConsonants("hej med dig"));
+        assertEquals(6, a.numberOfConsonants("HEJ MED dig"));
     }
 }

@@ -11,6 +11,7 @@ public class Alphabet {
 
     // This method takes a String as parameter (a text), and should return an int (the number of vowels in that string)
     public int numberOfVowels(String s){
+        s = s.toLowerCase();
         int count = 0;
         for (int i = 0; i < s.length(); i++){
             if(isVowel(s.charAt(i))){
@@ -21,6 +22,7 @@ public class Alphabet {
     }
 
     public int numberOfConsonants(String s){
+        s = s.toLowerCase();
         int count = 0;
         for (int i = 0; i < s.length(); i++){
             if(isCosonant(s.charAt(i))){
