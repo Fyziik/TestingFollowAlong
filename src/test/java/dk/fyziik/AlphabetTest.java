@@ -18,11 +18,13 @@ class AlphabetTest {
     void numberOfVowels() {
         assertEquals(2, a.numberOfVowels("rasmus"));
         assertEquals(3, a.numberOfVowels("andreas"));
+        assertEquals(3, a.numberOfVowels("hej med dig"));
     }
 
     @Test
     void numberOfConsonants() {
         assertEquals(4, a.numberOfConsonants("rasmus"));
         assertEquals(4, a.numberOfConsonants("andreas"));
+        assertEquals(6, a.numberOfConsonants("hej med dig"));
     }
 }

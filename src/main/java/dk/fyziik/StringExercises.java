@@ -47,8 +47,7 @@ public class StringExercises {
     public String fixStart(String s) {
         char firstChar = s.charAt(0);
         String tmp = s.replace(firstChar, '*');
-        tmp = tmp.substring(1, s.length());
-        return firstChar + tmp;
+        return firstChar + tmp.substring(1, s.length());
     }
 
 
