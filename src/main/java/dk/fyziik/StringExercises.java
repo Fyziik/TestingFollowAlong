@@ -34,12 +34,7 @@ public class StringExercises {
         if (s.length() < 2) {
             return "";
         }
-        String tmp = "";
-        tmp += s.charAt(0);
-        tmp += s.charAt(1);
-        tmp += s.charAt(s.length()-2);
-        tmp += s.charAt(s.length()-1);;
-        return tmp;
+        return s.substring(0, 2) + s.substring(s.length()-2);
     }
 
 //     C. fix_start
